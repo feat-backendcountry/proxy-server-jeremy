@@ -1,0 +1,3 @@
+[submodule "component-jeremy"]
+	path = component-jeremy
+	url = https://github.com/feat-backendcountry/component-jeremy

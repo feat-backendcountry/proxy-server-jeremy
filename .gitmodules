@@ -1,0 +1,6 @@
+[submodule "component-jeremy"]
+	path = component-jeremy
+	url = https://github.com/feat-backendcountry/component-jeremy
+[submodule "component-kristina"]
+	path = component-kristina
+	url = https://github.com/feat-backendcountry/component-kristina

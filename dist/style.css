@@ -31,7 +31,7 @@
 } */
 
 .main {
-  border-top: 1px solid #222;
+  
   font-size: 14px;
   line-height: 20px;
   display: block;
@@ -49,9 +49,15 @@
   text-align: center;
 }
 
-.content {
+.reviews-top-boarder {
+  border-top: 1px solid #222;
   width: 80%;
-  margin: 0 10%
+  margin: 0 10%;
+}
+
+.content {
+  width: 86%;
+  margin: 0 7%
 }
 
 /*
@@ -117,10 +123,7 @@ Summary block
   font-size: 14px;
   height: auto;
   line-height: 20px;
-  margin-bottom: 30px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 30px;
+  margin: 30px auto;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -132,7 +135,7 @@ Summary block
 
 .avgRating {
   display: inline-block;
-  width: 33%;
+  width: 26%;
 }
 
 .avgRating-stars {
@@ -308,7 +311,7 @@ Summary block
 
 .fitBar {
   display: inline-block;
-  width: 33%;
+  width: 40%;
   height: auto;
 }
 
@@ -709,4 +712,728 @@ reviews
 .load-btn:hover {
     background: #222;
     color: #fff
+}
+
+
+/*
+  ========================================
+  Entire Navigation Bar Component
+  ========================================
+*/
+
+.nav-bar {
+  display: block;
+  color: #000;
+  font: 16px/22px "AktivGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  ========================================
+  Shipping Section
+  ========================================
+*/
+
+.shipping-bar {
+  background-color:#DDC9A3;
+  height: 33px;
+  position: relative;
+  text-align: center;
+}
+
+.shipping-text {
+  display: inline-block;
+  color: #222;
+  font-size: 12px;
+  font-weight: 350;
+  margin-top: 6px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  Main Section - Pending
+  ========================================
+*/
+
+.main-bar {
+  display: block;
+  /* position: sticky; */
+  /* top: 33px; */
+  background: #FFF;
+  width: 100%;
+  font-size: 12px;
+  height: 80px;
+  /* transition: top 0.5s; */
+}
+
+/*
+  ----------------------------------------
+  Company Logo
+  ----------------------------------------
+*/
+
+.company-logo-container {
+  display: inline-block;
+  height: 80px;
+  width: 200px;
+  vertical-align: top;
+  margin-inline-start: 90px;
+}
+
+.company-logo-image {
+  display: inline-block;
+  width: 175px;
+  padding-right: 5px;
+  margin-top: 28px;
+  margin-inline-start: 15px;
+  cursor: pointer;
+}
+
+/*
+  ----------------------------------------
+  Search Bar - Pending
+  ----------------------------------------
+*/
+
+.search-container {
+  display: inline-block;
+  height: 80px;
+  width: 49%;
+  vertical-align: top;
+}
+
+.search-bar {
+  display: inline-block;
+  height: 30px;
+  width: 660px;
+  max-width: 95%;
+  margin-top: 30px;
+  padding-left: 15px;
+  background-color: #000;
+  border-radius: 30px;
+}
+
+.search-button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  border: 0;
+  background-image: url(https://i.imgur.com/DCRnDYC.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF;
+  opacity: 1; /* Firefox */
+}
+
+.search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFF;
+}
+
+.search-input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFF;
+}
+
+.search-input {
+  display: inline-block;
+  width: 650px;
+  max-width: 95%;
+  margin-top: 5px;
+  margin-left: 6px;
+  background-color: #000;
+  font-size: 12px;
+  border: 0;
+  color: #FFF;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/*
+  ----------------------------------------
+  Contact Methods
+  ----------------------------------------
+*/
+
+.chat-container {
+  display: inline-block;
+  height: 80px;
+  width: 112px;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chat-icon {
+  display: inline-block;
+  height: 18px;
+  margin-top: 30px;
+  padding-right: 5px;
+}
+
+.phone-container {
+  display: inline-block;
+  height: 80px;
+  width: 125px;
+}
+
+.phone-icon {
+  display: inline-block;
+  height: 12px;
+  padding-right: 10px;
+}
+
+.phone-text {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+/*
+  ----------------------------------------
+  Login
+  ----------------------------------------
+*/
+
+.login-container {
+  display: inline-block;
+  height: 80px;
+  vertical-align: top;
+}
+
+.login-text {
+  display: inline-block;
+  width: 140px;
+  margin-top: 35px;
+  vertical-align: top;
+  text-align: right;
+  cursor: pointer;
+}
+
+.avatar-icon {
+  display: inline-block;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  width: 40px;
+  margin-top: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+/*
+  ----------------------------------------
+  Checkout
+  ----------------------------------------
+*/
+
+.checkout-container {
+  display: inline-block;
+  height: 80px;
+  width: 50px;
+  vertical-align: bottom;
+}
+
+.cart-icon {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 15px;
+  margin-inline-start: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  Search Result - Pending
+  ========================================
+*/
+
+.search-results {
+  display: block;
+  height: 560px;
+  width: 67%;
+  position: absolute;
+  border-top: 1px solid;
+  border-color:	#C8C8C8;
+  background-color: #FFF;
+  margin-left: 17.25%;
+  text-align: center;
+  /* transition: all 5s ease-in-out; */
+  z-index: 1;
+}
+
+.search-result-text-container {
+  display: block;
+  width: 245px;
+  float: left;
+  margin-inline-start: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.query-text {
+  font-weight: 800;
+}
+
+.search-department {
+  color: #666;
+}
+
+.result-with-category {
+  margin-left: 18px;
+}
+
+.search-result-text-item {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  text-align: left;
+}
+
+.search-result-separator-container {
+  display: block;
+  text-align: center;
+}
+
+.search-result-separator {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  /* margin-top: 40px; */
+  background-color:	#C8C8C8;
+  border-radius: 3px;
+}
+
+.search-result-display-container {
+  display: block;
+  width: 75%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-result-display-item {
+  display: inline-block;
+  width: 185px;
+  height: 220px;
+  margin: 10px;
+  text-align: center;
+}
+
+.search-result-display {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.search-result-display-brand {
+  display: inline-block;
+  width: 100%;
+  font-weight: 800;
+}
+
+.search-result-display-name {
+  display: inline-block;
+  width: 100%;
+}
+
+/*
+  ========================================
+  Menu Section
+  ========================================
+*/
+
+.menu-bar {
+  display: block;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  /* position: sticky; */
+  /* top: 33px; */
+}
+
+.menu-item {
+  display: inline-block;
+  height: 60px;
+  width: 11.16%;
+  border-top: 1px solid;
+  cursor: pointer;
+}
+
+.menu-name {
+  line-height: 60px;
+}
+
+/*
+  ========================================
+  Hover Containers - Pending
+  ========================================
+*/
+
+.hover-display {
+  display: none;
+  /* display: block; */
+  font-size: 14px;
+  width: 100%;
+  color: #666;
+  background-color: #FFF;
+  border-top: 1px solid;
+  border-color:	#C8C8C8;
+  position: absolute;
+  top: 173px;
+  left: 0px;
+  text-align: left;
+  padding-block-end: 30px;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+}
+
+.hover-brands {
+  /* display: block; */
+  display: none;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid;
+  border-color:	#C8C8C8;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+}
+
+.hover-activities {
+  /* display: block; */
+  display: none;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid;
+  border-color:	#C8C8C8;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+}
+
+.new-arrivals:hover .hover-new-arrivals {
+  display: block;
+  max-height: 800px;
+}
+.brands:hover .hover-brands {
+  display: block;
+  max-height: 800px;
+}
+.activities:hover .hover-activities {
+  display: block;
+  max-height: 270px;
+}
+.women:hover .hover-women{
+  display: block;
+  max-height: 800px;
+}
+.men:hover .hover-men{
+  display: block;
+  max-height: 800px;
+}
+.kids:hover .hover-kids{
+  display: block;
+  max-height: 800px;
+}
+.sale:hover .hover-sale{
+  display: block;
+  max-height: 800px;
+}
+
+/* .new-arrivals:hover * .category-container {
+  display: inline-block;
+}
+.brands:hover .hover-brands {
+  display: inline-block;
+}
+.activities:hover .hover-activities {
+  display: inline-block;
+}
+.women:hover * .category-container {
+  display: inline-block;
+}
+.men:hover * .category-container {
+  display: inline-block;
+}
+.kids:hover * .category-container {
+  display: inline-block;
+}
+.sale:hover * .category-container {
+  display: inline-block;
+} */
+
+/*
+  ----------------------------------------
+  Hover New Arrivals, Women, Men, Kids, & Sale Section - Pending
+  ----------------------------------------
+*/
+
+.container-0 {
+  margin-inline-start: 340px;
+}
+
+.category-container {
+  display: inline-block;
+  /* display: none; */
+  vertical-align: top;
+  width: 200px;
+  max-width: 12%;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.category-name {
+  display: inline-block;
+  width: 160px;
+  max-width: 95%;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+}
+
+.category-item {
+  display: inline-block;
+  height: 24px;
+  width: 160px;
+  max-width: 95%;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  color: #222;
+}
+
+.seasonal-ad {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  max-width: 15%;
+  margin-top: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ad-photo {
+  display: inline-block;
+  height: 240px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: -310px;
+}
+
+.ad-small-text {
+  display: inline-block;
+  color: #999;
+  width: 250px;
+  height: 20px;
+  max-width: 100%;
+}
+
+.ad-large-text {
+  display: inline-block;
+  font: 26px "CaslonGraphique", serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 800;
+  color: #222;
+  width: 250px;
+  max-width: 100%;
+}
+
+/*
+  ----------------------------------------
+  Hover Brands Section - Pending
+  ----------------------------------------
+*/
+
+.brands-header {
+  margin-top:25px;
+  color: #222;
+}
+
+.brands-item {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 0px 11px;
+  color: #666;
+  cursor: pointer;
+}
+
+.brands-item:hover {
+  color: #222;
+}
+
+/*
+  ----------------------------------------
+  Hover Activities Section - Pending
+  ----------------------------------------
+*/
+
+.activity-container {
+  display: inline-block;
+  height: 102px;
+  width: 14.2%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.activity-image {
+  display: inline-block;
+  height: 102px;
+  width: 200px;
+  text-align: center;
+  box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.activity-image.image-0 {
+  background: url(https://i.imgur.com/gVdHy4R.jpg);
+  background-size: contain;
+}
+.activity-image.image-1 {
+  background: url(https://i.imgur.com/chrV69Y.jpg);
+  background-size: contain;
+}
+.activity-image.image-2 {
+  background: url(https://i.imgur.com/VTihgd6.jpg);
+  background-size: contain;
+}
+.activity-image.image-3 {
+  background: url(https://i.imgur.com/xwEoVMZ.jpg);
+  background-size: contain;
+}
+.activity-image.image-4 {
+  background: url(https://i.imgur.com/0oiRl9n.jpg);
+  background-size: contain;
+}
+.activity-image.image-5 {
+  background: url(https://i.imgur.com/NWRhuz2.jpg);
+  background-size: contain;
+}
+
+.activity-name {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  top: 40%;
+  color: #FFF;
+}
+
+.separator-container {
+  display: block;
+  text-align: center;
+}
+
+.separator {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  margin-top: 40px;
+  background-color:	#F0F0F0;
+  border-radius: 3px;
+}
+
+.other-activities-container {
+  display: block;
+  margin-top: 25px;
+}
+
+.other-activity-item {
+  display: inline-block;
+  height: 20px;
+  font-size: 12px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.other-activity-item:hover {
+  color: #222;
+}
+
+/*
+  ========================================
+  Sale Section - Pending
+  ========================================
+*/
+
+.sale-bar {
+  background: url(https://i.imgur.com/f5Z12ND.jpg);
+  background-size: cover;
+  background-position-y: -780px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.sale-text1 {
+  display: block;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 350;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sale-text2 {
+  font-weight: 600;
+}
+
+/*
+  ========================================
+  Static Components
+  ========================================
+*/
+
+.static-image {
+  display: block;
+  text-align: center;
+  background-size: contain;
+  width: 100%;
+  z-index: -1;
+}
+
+.menu-bar:hover ~ .static-image {
+  filter: brightness(80%);
+}
+
+.qa-container {
+  margin-bottom: 30%
+}
+
+
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-image {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 422px;
+  height: 471px;
 }
